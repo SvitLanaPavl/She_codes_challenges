@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day {
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day h3 {
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.day p {
+    margin-top: 0;
+    padding: 10px;
+}
+
+.sections h1 {
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.1rem;
+    color: #0665d8;
+}
+
+.sections .ti-temp {
+    margin-top: 0;
+    padding: 5px;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+   
+}
+
+
+#coded {
+    font-family: 'Courier New';
+    font-size: 1.2rem;
+}
+
+.sections .temp {
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+#h1-em {
+    font-size: 2.2rem;
+    width:100%;
+    text-align:center;
+    
+}
+
+button {
+    margin-top: 15px;
+    height: 55px;
+    width: 130px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0665d8;
+    border: 1px solid #0665d8;
+}
+
+button:hover {
+    color: #0665d8;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: rgb(255, 244, 236);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+

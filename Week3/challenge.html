@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming 🏊‍♀️ </title>
+    <style>
+.container {
+    background: linear-gradient(#F9EAED, #f4d8d4);
+    max-width: 100%; 
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #122A59;
+    font-size: 2.5rem;
+    border: 3px solid #D9734E;
+    border-radius: 6px;
+    line-height: 1.7;
+}
+h2 {
+    text-align: center;
+   color: #0477BF;
+    border-bottom: 3px solid #D9734E;
+    padding: 15px;
+    font-size: 2rem;
+    
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    border-radius: 10px;
+    
+}
+
+p.article {
+    border-top: 3px solid #D9734E;
+     line-height: 1.5;
+     font-size: 20px;
+     margin: 20px 0 20px;
+     padding-top: 15px;
+     text-align: justify;
+}
+
+a {
+    padding-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    text-decoration: none;
+    color: #122A59;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    font-size: 18px;
+    background-color: #D9734E;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 60px;
+}
+
+.learn-more {
+     font-size: 12px;
+     margin-top: 10px;
+     text-decoration: none;
+     color: #7d51e8;
+}
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>I love swimming</h1>
+    <h2>Especially as regular training practice</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/309/original/SWIM_Adult_Cover_istock_microgen.jpeg?1655293855">
+    <p class="article"><b>Swimming</b> is the self-propulsion of a person 
+        through water, or other liquid, usually for 
+        recreation, sport, exercise, or survival. 
+        Locomotion is achieved through coordinated 
+        movement of the limbs and the body to achieve 
+        hydrodynamic thrust which results in directional 
+        motion. Humans can hold their breath underwater 
+        and undertake rudimentary locomotive swimming 
+        within weeks of birth, as a survival response. 
+</p>
+    <a href="https://en.wikipedia.org/wiki/Swimming">Learn more on Wikipedia</a>
+    
+    <button class="learn-button">👉 Learn to swim</button>
+   <p class="footer"> This page was built by Lana Pavlovska</p>
+</div>
+<script>
+    function learn() {
+        let name = prompt('What is your name?');
+        let email = prompt('What is your email address?');
+        let age = prompt('What is your age?');
+        if (name.length && email.length) {
+            if (age >= 18) {
+                alert(`Thank you, ${name}! We'll be in touch by emial.`);
+            }
+            else {
+                alert(`Your age in under 18. Please, ask your parents to contact our team.`)
+            }
+            
+        }
+
+        else if (name.length && age < 18) {
+            alert(`Your age in under 18. Please, ask your parents to contact our team.`)
+        }
+
+        else {
+            alert(`Dear visitor, we hope you will contact us later 😊. Meanwhile, enjoy watching swimming-related videos on our website!`);
+        }
+        
+    }
+    let learnButton = document.querySelector('.learn-button');
+    learnButton.addEventListener('click', learn);
+</script>
+</body>
+</html>
